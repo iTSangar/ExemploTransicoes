@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Ye-yr-Bat">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="F1A-WV-20C">
+            <objects>
+                <viewController id="CTO-cI-yxr" customClass="ViewTab2" customModule="PasseandoPelasTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Udc-pT-MUp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4BH-cs-PmH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C5h-AJ-92W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPf-Q4-mfi">
+                                <rect key="frame" x="192" y="237" width="216" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Novo controller com Segue">
+                                    <color key="titleColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3ug-3a-Rlm" kind="show" id="ENi-bf-Q7u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController Exemplo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2re-3A-duR">
+                                <rect key="frame" x="20" y="73" width="560" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ytz-k9-k7p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDD-fZ-8QO">
+                                <rect key="frame" x="209" y="143" width="183" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Novo controller Action">
+                                    <color key="titleColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chamarViewController" destination="CTO-cI-yxr" eventType="touchUpInside" id="2Tb-gd-awf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2re-3A-duR" firstAttribute="centerX" secondItem="C5h-AJ-92W" secondAttribute="centerX" id="CNq-p6-S1G"/>
+                            <constraint firstItem="DPf-Q4-mfi" firstAttribute="top" secondItem="cDD-fZ-8QO" secondAttribute="bottom" constant="46" id="DLU-iP-Raq"/>
+                            <constraint firstItem="cDD-fZ-8QO" firstAttribute="top" secondItem="2re-3A-duR" secondAttribute="bottom" constant="13" id="Moq-98-QMj"/>
+                            <constraint firstItem="2re-3A-duR" firstAttribute="top" secondItem="Udc-pT-MUp" secondAttribute="bottom" constant="53" id="Og8-5m-lWu"/>
+                            <constraint firstItem="cDD-fZ-8QO" firstAttribute="centerX" secondItem="C5h-AJ-92W" secondAttribute="centerX" id="T6m-4u-0J6"/>
+                            <constraint firstItem="2re-3A-duR" firstAttribute="leading" secondItem="C5h-AJ-92W" secondAttribute="leadingMargin" id="WXa-y3-27J"/>
+                            <constraint firstItem="DPf-Q4-mfi" firstAttribute="centerX" secondItem="C5h-AJ-92W" secondAttribute="centerX" id="YVu-ld-Qe0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ViewController" image="first" id="8M7-da-tGB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3G-yx-u25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="895"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="or1-HE-sxB">
+            <objects>
+                <viewController id="3ug-3a-Rlm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DCy-Tt-TZU"/>
+                        <viewControllerLayoutGuide type="bottom" id="0WG-g1-jtT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eNZ-Gu-njt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController Exemplo — Show Segue " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-U0-zad">
+                                <rect key="frame" x="20" y="271" width="560" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="AuN-Qe-ojj"/>
+                                    <constraint firstAttribute="height" constant="57" id="KYQ-Ve-1uy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="562-cW-I3C">
+                                <rect key="frame" x="9" y="28" width="202" height="38"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="&lt;&lt; Voltar usando unSegue">
+                                    <color key="titleColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="35B-JP-Sx7" kind="unwind" unwindAction="unwindToViewTab2:" id="aQv-lc-PkD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.66902792450000004" green="0.73128575090000003" blue="0.9488992691" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="562-cW-I3C" firstAttribute="top" secondItem="DCy-Tt-TZU" secondAttribute="bottom" constant="8" id="0BU-RL-M44"/>
+                            <constraint firstItem="562-cW-I3C" firstAttribute="leading" secondItem="eNZ-Gu-njt" secondAttribute="leading" constant="9" id="5Bg-rA-VTm"/>
+                            <constraint firstItem="aBg-U0-zad" firstAttribute="centerY" secondItem="eNZ-Gu-njt" secondAttribute="centerY" id="8wf-7Q-O47"/>
+                            <constraint firstItem="aBg-U0-zad" firstAttribute="leading" secondItem="eNZ-Gu-njt" secondAttribute="leadingMargin" id="GzQ-Gr-J8X"/>
+                            <constraint firstItem="aBg-U0-zad" firstAttribute="centerX" secondItem="eNZ-Gu-njt" secondAttribute="centerX" id="ZGf-K6-Gvp"/>
+                            <constraint firstItem="aBg-U0-zad" firstAttribute="trailing" secondItem="eNZ-Gu-njt" secondAttribute="trailingMargin" id="xxP-5C-b0s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUi-Bn-dLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="35B-JP-Sx7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="1665"/>
+        </scene>
+        <!--Novo View Controller-->
+        <scene sceneID="7B6-S8-Ozu">
+            <objects>
+                <viewController storyboardIdentifier="ViewViaCodigo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TKw-bo-z8H" customClass="NovoViewController" customModule="PasseandoPelasTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UuN-od-4d8"/>
+                        <viewControllerLayoutGuide type="bottom" id="ylr-nG-Jwy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hlr-kI-LWT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller iniciada via codigo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2u-XZ-BKK">
+                                <rect key="frame" x="20" y="54" width="560" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="oGl-4y-ugr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS4-Ls-Gec">
+                                <rect key="frame" x="201" y="274" width="199" height="51"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Voltar usando metodo">
+                                    <color key="titleColor" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="voltarPraViewAnterior" destination="TKw-bo-z8H" eventType="touchUpInside" id="Tgt-PU-tpi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.66902792450000004" green="0.73128575090000003" blue="0.9488992691" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BS4-Ls-Gec" firstAttribute="centerX" secondItem="Hlr-kI-LWT" secondAttribute="centerX" id="8rf-zf-ryj"/>
+                            <constraint firstItem="f2u-XZ-BKK" firstAttribute="leading" secondItem="Hlr-kI-LWT" secondAttribute="leading" constant="20" id="JoO-pi-Kn4"/>
+                            <constraint firstItem="f2u-XZ-BKK" firstAttribute="top" secondItem="UuN-od-4d8" secondAttribute="bottom" constant="34" id="Qii-7u-2QQ"/>
+                            <constraint firstAttribute="trailing" secondItem="f2u-XZ-BKK" secondAttribute="trailing" constant="20" id="XVD-0a-kYK"/>
+                            <constraint firstItem="f2u-XZ-BKK" firstAttribute="centerX" secondItem="Hlr-kI-LWT" secondAttribute="centerX" id="cUt-NH-3Y5"/>
+                            <constraint firstItem="BS4-Ls-Gec" firstAttribute="centerY" secondItem="Hlr-kI-LWT" secondAttribute="centerY" id="mQG-PI-eo8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dm1-UX-wLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="2480"/>
+        </scene>
+        <!--Navigation Tab1-->
+        <scene sceneID="4AI-in-qXL">
+            <objects>
+                <viewController id="zXi-gB-8A8" customClass="NavigationTab1" customModule="PasseandoPelasTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ucb-rL-xQ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="s9x-Vq-aEl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zlx-At-9cz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NavigationView Controller Exemplo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5J-ey-II8">
+                                <rect key="frame" x="20" y="90" width="560" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="sC3-Wh-5qi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70r-PN-NAR">
+                                <rect key="frame" x="206" y="172" width="188" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.15101002159999999" green="0.56891876460000002" blue="0.43715286250000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Novo navigation Action">
+                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chamarNavigationController" destination="zXi-gB-8A8" eventType="touchUpInside" id="JRs-3B-za6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UE8-Rh-L1R">
+                                <rect key="frame" x="190" y="248" width="221" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.15101002159999999" green="0.56891876460000002" blue="0.43715286250000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Novo navigation com Segue">
+                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Omy-hA-AxL" kind="show" id="1hV-Kq-JBQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="70r-PN-NAR" firstAttribute="top" secondItem="l5J-ey-II8" secondAttribute="bottom" constant="25" id="Eok-J9-btw"/>
+                            <constraint firstItem="l5J-ey-II8" firstAttribute="leading" secondItem="Zlx-At-9cz" secondAttribute="leadingMargin" id="G3O-Ng-pUK"/>
+                            <constraint firstItem="70r-PN-NAR" firstAttribute="centerX" secondItem="Zlx-At-9cz" secondAttribute="centerX" id="PHM-v1-lIM"/>
+                            <constraint firstItem="l5J-ey-II8" firstAttribute="centerX" secondItem="Zlx-At-9cz" secondAttribute="centerX" id="bNx-uf-uj8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l5J-ey-II8" secondAttribute="trailing" id="g6G-0e-jWp"/>
+                            <constraint firstItem="l5J-ey-II8" firstAttribute="top" secondItem="ucb-rL-xQ3" secondAttribute="bottom" constant="26" id="tAD-Ue-N7l"/>
+                            <constraint firstItem="UE8-Rh-L1R" firstAttribute="centerX" secondItem="Zlx-At-9cz" secondAttribute="centerX" id="tg4-fd-oDK"/>
+                            <constraint firstItem="UE8-Rh-L1R" firstAttribute="top" secondItem="70r-PN-NAR" secondAttribute="bottom" constant="28" id="wtn-Vd-rYB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zgV-UQ-ys3">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="1gT-8Q-8OQ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCy-Yk-A72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="1665"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yyo-xc-ptU">
+            <objects>
+                <viewController id="Omy-hA-AxL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cnv-aR-ntS"/>
+                        <viewControllerLayoutGuide type="bottom" id="vUm-ZA-Uht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UZn-u0-1SD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NavigationView Controller Exemplo — Show Segue " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8S-BL-9tF">
+                                <rect key="frame" x="47" y="129" width="506" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="lHT-gb-heC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W8S-BL-9tF" firstAttribute="centerX" secondItem="UZn-u0-1SD" secondAttribute="centerX" id="hCB-9w-KgU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W8S-BL-9tF" secondAttribute="trailing" constant="27" id="jSm-nZ-x1W"/>
+                            <constraint firstItem="W8S-BL-9tF" firstAttribute="top" secondItem="Cnv-aR-ntS" secondAttribute="bottom" constant="65" id="nFz-IY-V6A"/>
+                            <constraint firstItem="W8S-BL-9tF" firstAttribute="leading" secondItem="UZn-u0-1SD" secondAttribute="leadingMargin" constant="27" id="rVz-gQ-wze"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0P-Kg-wyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="2492"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rJL-gJ-4jY">
+            <objects>
+                <tabBarController id="6Ye-yr-Bat" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bHy-uf-IMw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.3707177639" green="0.25714370609999998" blue="0.75468015669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4Gc-yT-hSd" kind="relationship" relationship="viewControllers" id="Jq2-w8-Mz8"/>
+                        <segue destination="CTO-cI-yxr" kind="relationship" relationship="viewControllers" id="Rml-An-yZh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTf-jp-v5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="25"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="dwj-lg-iER">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Gc-yT-hSd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Navigation" image="second" id="Md1-rT-aSk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hhd-dt-glk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.15101002159999999" green="0.56891876460000002" blue="0.43715286250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zXi-gB-8A8" kind="relationship" relationship="rootViewController" id="fZW-gN-APX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIn-5V-kHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="895"/>
+        </scene>
+        <!--Novo Navigation-->
+        <scene sceneID="iJJ-0U-y7B">
+            <objects>
+                <viewController storyboardIdentifier="NavViaCodigo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a2H-B4-dC6" customClass="NovoNavigation" customModule="PasseandoPelasTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jV3-no-aP5"/>
+                        <viewControllerLayoutGuide type="bottom" id="T6g-cj-en3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="una-Q5-0eE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigation Controller iniciado via codigo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZH-LC-89T">
+                                <rect key="frame" x="20" y="54" width="560" height="57"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ssz-t6-TM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-Xm-wus">
+                                <rect key="frame" x="210" y="276" width="181" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1899853349" green="0.35768887399999999" blue="0.43821841480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Voltar usando metodo">
+                                    <color key="titleColor" red="0.78738981490000004" green="0.2464441359" blue="0.27221894260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="voltarProNavigationAnterior" destination="a2H-B4-dC6" eventType="touchUpInside" id="piV-0V-wjV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1ZH-LC-89T" secondAttribute="trailing" constant="20" id="391-pQ-7ME"/>
+                            <constraint firstItem="jJ2-Xm-wus" firstAttribute="centerX" secondItem="una-Q5-0eE" secondAttribute="centerX" id="5F4-Qt-2OE"/>
+                            <constraint firstItem="1ZH-LC-89T" firstAttribute="centerX" secondItem="una-Q5-0eE" secondAttribute="centerX" id="E5c-H4-mIM"/>
+                            <constraint firstItem="jJ2-Xm-wus" firstAttribute="centerY" secondItem="una-Q5-0eE" secondAttribute="centerY" id="ZGz-sb-A7Z"/>
+                            <constraint firstItem="1ZH-LC-89T" firstAttribute="top" secondItem="jV3-no-aP5" secondAttribute="bottom" constant="34" id="iXo-1b-PFL"/>
+                            <constraint firstItem="1ZH-LC-89T" firstAttribute="leading" secondItem="una-Q5-0eE" secondAttribute="leading" constant="20" id="oha-Qu-Lmy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCu-Qj-NgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="3224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
